@@ -31,9 +31,9 @@ import ReactDOM from "react-dom";
 // )
 
 // PART 4: Create functional component called MyInfo that returns the following UI
-    // a. h1 with your name
-    // b. A paragraph with a little blurb about yourself
-    // c. An ordered or unordered list of the top 3 vacation spots you'd like to visit
+// a. h1 with your name
+// b. A paragraph with a little blurb about yourself
+// c. An ordered or unordered list of the top 3 vacation spots you'd like to visit
 // Then render an instance of that functional component to the browser
 
 // function MyInfo () {
@@ -70,3 +70,73 @@ import ReactDOM from "react-dom";
 //     <App />,
 //     document.getElementById("root")
 // )
+
+// PART 7: Create App component with the following components:
+// Navbar, MainContent and Footer
+
+// import App from "./components/App"
+
+// ReactDOM.render(
+//     <App />,
+//     document.getElementById("root")
+// );
+
+// PART 8: Create App component. This wil render 3 or 4 checkboxes with paragraphs/spans next to it like you're making a to-do list with some hard-coded items on it
+
+// import App from "./components/App"
+
+// ReactDOM.render(
+//     <App />,
+//     document.getElementById("root")
+// )
+
+// PART 9: JSX TO JS
+// function App() {
+//   // const firstName = "Selina"
+//   // const lastName = "Van"
+
+//   // return (
+//   //     // Standard format
+//   //     // <h1>Hello {firstName + " " + lastName}</h1>
+
+//   //     // ES6 format
+//   //     <h1>Hello {`${firstName} ${lastName}`}!</h1>
+//   // )
+
+//   const date = new Date();
+//   const hours = date.getHours();
+//   let timeOfDay;
+
+//   if (hours < 12) {
+//     timeOfDay = "morning";
+//     styles.color = "red";
+//   } else if (hours >= 12 && hours < 17) {
+//     timeOfDay = "afternoon";
+//     styles.color = "yellow";
+//   } else {
+//     timeOfDay = "night";
+//     styles.color = "blue";
+//   }
+
+//   // Issue with this inline style is that it can get quite long and ugly.
+// //  return (
+// //     <div>
+// //       <h1 style={{color: "#FF8C00", backgroundColor: "#FF2D00"}}>It is currently about {date.getHours() % 12} o'clock!</h1>
+// //       <h2>Good {timeOfDay}!</h2>
+// //     </div>
+// //   );
+
+// const styles = {
+//     color: "#FF8C00", 
+//     backgroundColor: "#FF2D00"
+// }
+
+//   return (
+//     <div>
+//       <h1 style={styles}>It is currently about {date.getHours() % 12} o'clock!</h1>
+//       <h2>Good {timeOfDay}!</h2>
+//     </div>
+//   );
+// }
+
+// ReactDOM.render(<App />, document.getElementById("root"));
