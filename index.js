@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import App from "./components/App";
 
 // PART 1: ReactDOM.render(What I want to render, where will it be rendered)
 // ReactDOM.render(<h1>Hello world!</h1>, document.getElementById("root"))
@@ -140,3 +141,11 @@ import ReactDOM from "react-dom";
 // }
 
 // ReactDOM.render(<App />, document.getElementById("root"));
+
+// PART 10: To Do App Phase 2
+// Add checkboxes to a component called <TodoItem />. Each item is hardcoded inside
+
+// ReactDOM.render(
+//     <App />, 
+//     document.getElementById("root")
+// )

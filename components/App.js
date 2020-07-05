@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import MainContent from "./components/MainContent";
+import TodoItem from "./ToDoItem";
 
 function App() {
   return (
@@ -29,7 +30,6 @@ function App() {
     //   <Footer />
     // </div>
 
-
     // PART 8: Create App component. This wil render 3 or 4 checkboxes with paragraphs/spans next to it like you're making a to-do list with some hard-coded items on it
 
     // <div>
@@ -44,11 +44,19 @@ function App() {
     // </div>
 
     // PART 9: Styling React with CSS
-// <div>
-//    <Navbar />
-//    <MainContent />
-//    <Footer />
-// </div>    
+    // <div>
+    //    <Navbar />
+    //    <MainContent />
+    //    <Footer />
+    // </div>
+
+    // PART 10: To Do App Phase 2
+    // Add checkboxes to a component called <TodoItem />. Each item is hardcoded inside
+    // <div>
+    //   <ToDoItem />
+    //   <ToDoItem />
+    //   <ToDoItem />
+    // </div>
   );
 }
 
