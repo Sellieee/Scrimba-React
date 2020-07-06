@@ -3,6 +3,7 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import MainContent from "./components/MainContent";
 import TodoItem from "./ToDoItem";
+import ContactCard from "./ContactCard";
 
 function App() {
   return (
@@ -57,6 +58,31 @@ function App() {
     //   <ToDoItem />
     //   <ToDoItem />
     // </div>
+
+    // PART 11: React Props
+    <div className="contacts">
+      <ContactCard 
+      name="A"
+      imgURL="B"
+      phone="C"
+      email="D"
+      />
+      <ContactCard 
+      name="E"
+      imgURL="F"
+      phone="G"
+      email="H"
+      />
+      <ContactCard 
+      name="I"
+      imgURL="J"
+      phone="K"
+      email="L"
+      />
+      <ContactCard 
+    contact={{name: "M", imgURL: "N", phone: "O", email: "P"}}
+      />
+    </div>
   );
 }
 
