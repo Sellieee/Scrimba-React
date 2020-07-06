@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import MainContent from "./components/MainContent";
 import TodoItem from "./ToDoItem";
 import ContactCard from "./ContactCard";
+import Joke from "./Joke"
 
 function App() {
   return (
@@ -60,29 +61,35 @@ function App() {
     // </div>
 
     // PART 11: React Props
-    <div className="contacts">
-      <ContactCard 
-      name="A"
-      imgURL="B"
-      phone="C"
-      email="D"
-      />
-      <ContactCard 
-      name="E"
-      imgURL="F"
-      phone="G"
-      email="H"
-      />
-      <ContactCard 
-      name="I"
-      imgURL="J"
-      phone="K"
-      email="L"
-      />
-      <ContactCard 
-    contact={{name: "M", imgURL: "N", phone: "O", email: "P"}}
-      />
-    </div>
+    // <div className="contacts">
+    //   <ContactCard name="A" imgURL="B" phone="C" email="D" />
+    //   <ContactCard name="E" imgURL="F" phone="G" email="H" />
+    //   <ContactCard name="I" imgURL="J" phone="K" email="L" />
+    //   <ContactCard
+    //     contact={{ name: "M", imgURL: "N", phone: "O", email: "P" }}
+    //   />
+    // </div>
+
+    // PART 12: Render <App /> component. App renders 5 <Joke /> components
+    // Each Joke receives a "Question" prop and a "punchline" prop
+
+    // <div>
+    //   <Joke 
+    //   question="Q1"
+    //   punchline="A1"/>
+    //   <Joke 
+    //   question="Q2"
+    //   punchline="P2"/>
+    //   <Joke 
+    //   question="Q3"
+    //   punchline="P3"/>
+    //   <Joke 
+    //   question="Q4"
+    //   punchline="P4"/>
+    //   <Joke 
+    //   question="Q5"
+    //   punchline="P5"/>
+    // </div>
   );
 }
 

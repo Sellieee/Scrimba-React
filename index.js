@@ -149,3 +149,11 @@ import App from "./components/App";
 //     <App />, 
 //     document.getElementById("root")
 // )
+
+// PART 12: Render <App /> component. App renders 5 <Joke /> components
+    // Each Joke receives a "Question" prop and a "punchline" prop
+
+// ReactDOM.render(
+//     <App />,
+//     document.getElementById("root")
+// )
