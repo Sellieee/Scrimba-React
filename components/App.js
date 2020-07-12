@@ -5,9 +5,10 @@ import MainContent from "./components/MainContent";
 import TodoItem from "./ToDoItem";
 import ContactCard from "./ContactCard";
 import Joke from "./Joke"
+import jokesData from "./jokesData"
 
-function App() {
-  return (
+// function App() {
+//   return (
     // PART 6: React Parent/Child Component Tutorial
     //  <div>
     //   <nav>
@@ -90,7 +91,26 @@ function App() {
     //   question="Q5"
     //   punchline="P5"/>
     // </div>
-  );
-}
+//   );
+// }
 
+// PART 13: Learning map
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// Takes the array and doubles everything and returns array [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+const doubled = nums.map(function(num) {
+    return num * 2
+})
+console.log(doubled)
+
+// Using Joke/Punchline example
+function App() {
+    // Each child in an array or iterator should have a unique "key" prop
+  const jokeComponents = jokesData.map(joke => <Joke key={joke.id} question={joke.question} punchline={joke.punchline} />)
+
+  return (
+      <div>
+          {jokeComponents}
+      </div>
+  )
+}
 export default App;
